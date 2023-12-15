@@ -1,4 +1,5 @@
 import Layout from 'components/layout'
+import 'styles/globals.css'
 
 const Myapp = ({ Component, pageProps }) => {
   return (
@@ -7,5 +8,4 @@ const Myapp = ({ Component, pageProps }) => {
     </Layout>
   )
 }
-
 export default Myapp

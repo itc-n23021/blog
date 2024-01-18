@@ -1,6 +1,6 @@
 import { getPostBySlug } from 'lib/api'
 import Container from 'components/container'
-export default function Schedulre ({
+export default function Schedule ({
   title,
   publish,
   content,
@@ -20,9 +20,9 @@ export async function getStaticProps () {
   const post = await getPostBySlug(slug)
 
   return {
-    iprops: {
+    props: {
       title: post.title,
-      publish: post.publish,
+      publish: post.publishDate,
       content: post.content,
       eyecatch: post.eyecatch,
       categories: post.categories
